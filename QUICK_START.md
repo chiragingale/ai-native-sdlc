@@ -3,7 +3,7 @@
 ## Framework Structure
 
 ```text
-claude-sdlc-framework/
+ai-native-sdlc/
 ├── CLAUDE.md                    # Project context file
 ├── README.md                    # Main documentation
 ├── INTEGRATION_GUIDE.md         # Detailed integration instructions
@@ -47,11 +47,11 @@ claude-sdlc-framework/
 
 ```bash
 # Option 1: Run setup script
-cd claude-sdlc-framework
+cd ai-native-sdlc
 ./setup.sh
 
 # Option 2: Manual
-git clone <repo> my-project
+git clone https://github.com/chiragingale/ai-native-sdlc.git my-project
 cd my-project && rm -rf .git && git init
 claude
 ```
@@ -60,8 +60,8 @@ claude
 
 ```bash
 # Copy framework files to your project
-cp -r claude-sdlc-framework/.claude your-project/
-cp claude-sdlc-framework/CLAUDE.md your-project/
+cp -r ai-native-sdlc/.claude your-project/
+cp ai-native-sdlc/CLAUDE.md your-project/
 
 # Merge with existing CLAUDE.md if needed
 claude

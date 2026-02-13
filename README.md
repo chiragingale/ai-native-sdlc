@@ -18,7 +18,7 @@ An AI-native Software Development Lifecycle framework powered by Claude Code. Th
 #### New Repository
 ```bash
 # Clone the framework
-git clone https://github.com/your-org/claude-sdlc-framework.git my-project
+git clone https://github.com/chiragingale/ai-native-sdlc.git my-project
 cd my-project
 
 # Remove git history and reinitialize
@@ -38,7 +38,7 @@ claude
 cd your-project
 
 # Copy the framework files
-curl -sL https://github.com/your-org/claude-sdlc-framework/archive/main.tar.gz | tar -xz --strip=1 -C . claude-sdlc-framework-main/.claude claude-sdlc-framework-main/CLAUDE.md
+curl -sL https://github.com/chiragingale/ai-native-sdlc/archive/main.tar.gz | tar -xz --strip=1 -C . ai-native-sdlc-main/.claude ai-native-sdlc-main/CLAUDE.md
 
 # Or manually copy:
 # 1. Copy .claude/ directory to your project root
@@ -345,6 +345,6 @@ MIT License - See LICENSE file for details
 
 ## Support
 
-- [Documentation](https://github.com/your-org/claude-sdlc-framework/wiki)
-- [Issues](https://github.com/your-org/claude-sdlc-framework/issues)
-- [Discussions](https://github.com/your-org/claude-sdlc-framework/discussions)
+- [Documentation](https://github.com/chiragingale/ai-native-sdlc/wiki)
+- [Issues](https://github.com/chiragingale/ai-native-sdlc/issues)
+- [Discussions](https://github.com/chiragingale/ai-native-sdlc/discussions)

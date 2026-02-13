@@ -43,7 +43,7 @@ export SLACK_TOKEN="xoxb-your-slack-token"
 
 ```bash
 # Clone the framework as a template
-git clone https://github.com/your-org/claude-sdlc-framework.git my-new-project
+git clone https://github.com/chiragingale/ai-native-sdlc.git my-new-project
 cd my-new-project
 
 # Remove template git history
@@ -71,18 +71,18 @@ mkdir -p .claude/{agents,skills/{specify,design,develop,validate,release,maintai
 mkdir -p src tests docs
 
 # Download framework files
-curl -sL https://raw.githubusercontent.com/your-org/claude-sdlc-framework/main/CLAUDE.md -o CLAUDE.md
-curl -sL https://raw.githubusercontent.com/your-org/claude-sdlc-framework/main/.claude/settings.json -o .claude/settings.json
+curl -sL https://raw.githubusercontent.com/chiragingale/ai-native-sdlc/main/CLAUDE.md -o CLAUDE.md
+curl -sL https://raw.githubusercontent.com/chiragingale/ai-native-sdlc/main/.claude/settings.json -o .claude/settings.json
 
 # Download agents
 for agent in pm architect frontend backend qa devops tech-writer; do
-  curl -sL "https://raw.githubusercontent.com/your-org/claude-sdlc-framework/main/.claude/agents/${agent}-agent.md" \
+  curl -sL "https://raw.githubusercontent.com/chiragingale/ai-native-sdlc/main/.claude/agents/${agent}-agent.md" \
     -o ".claude/agents/${agent}-agent.md"
 done
 
 # Download skills (example for specify phase)
 for skill in spec user-story interview; do
-  curl -sL "https://raw.githubusercontent.com/your-org/claude-sdlc-framework/main/.claude/skills/specify/${skill}.md" \
+  curl -sL "https://raw.githubusercontent.com/chiragingale/ai-native-sdlc/main/.claude/skills/specify/${skill}.md" \
     -o ".claude/skills/specify/${skill}.md"
 done
 
@@ -95,7 +95,7 @@ git commit -m "Add Claude SDLC Framework"
 
 ```bash
 # Download and run setup script
-curl -sL https://raw.githubusercontent.com/your-org/claude-sdlc-framework/main/setup.sh | bash
+curl -sL https://raw.githubusercontent.com/chiragingale/ai-native-sdlc/main/setup.sh | bash
 ```
 
 ---
@@ -119,8 +119,8 @@ fi
 
 ```bash
 # Download and extract framework
-curl -sL https://github.com/your-org/claude-sdlc-framework/archive/main.tar.gz | \
-  tar -xz --strip-components=1 claude-sdlc-framework-main/.claude claude-sdlc-framework-main/CLAUDE.md
+curl -sL https://github.com/chiragingale/ai-native-sdlc/archive/main.tar.gz | \
+  tar -xz --strip-components=1 ai-native-sdlc-main/.claude ai-native-sdlc-main/CLAUDE.md
 ```
 
 ### Step 3: Merge Configuration
@@ -144,7 +144,7 @@ If you have existing project context:
 # Append framework content to existing CLAUDE.md
 cat CLAUDE.md.backup > CLAUDE.md
 echo -e "\n---\n" >> CLAUDE.md
-cat claude-sdlc-framework-main/CLAUDE.md >> CLAUDE.md
+cat ai-native-sdlc-main/CLAUDE.md >> CLAUDE.md
 ```
 
 ### Step 5: Customize for Your Project
@@ -409,8 +409,8 @@ fi
 
 3. **Clone and start**
    ```bash
-   git clone [repo-url]
-   cd [repo-name]
+   git clone https://github.com/chiragingale/ai-native-sdlc.git
+   cd ai-native-sdlc
    claude
    ```
 
@@ -499,7 +499,7 @@ fi
 ### Getting Help
 
 - **Documentation**: See README.md
-- **Issues**: https://github.com/your-org/claude-sdlc-framework/issues
+- **Issues**: https://github.com/chiragingale/ai-native-sdlc/issues
 - **Claude Code Help**: Run `/help` in Claude Code
 
 ---

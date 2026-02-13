@@ -233,7 +233,7 @@ interactive_setup() {
     echo "  2. Try '/spec' to create your first specification"
     echo "  3. Explore available skills with '/help sdlc'"
     echo ""
-    echo "Documentation: https://github.com/your-org/claude-sdlc-framework"
+    echo "Documentation: https://github.com/chiragingale/ai-native-sdlc"
     echo ""
 }
 
