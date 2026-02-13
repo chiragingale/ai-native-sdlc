@@ -1,4 +1,4 @@
-# Claude SDLC Framework
+# AI Native SDLC Framework
 
 An AI-native Software Development Lifecycle framework powered by Claude Code. This framework provides specialized agents, skills, and automation for every phase of development.
 
