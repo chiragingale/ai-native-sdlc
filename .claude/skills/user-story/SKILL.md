@@ -1,9 +1,7 @@
-# Skill: /user-story - Create User Stories
-
-<command-name>user-story</command-name>
-
-## Description
-Creates detailed user stories with acceptance criteria, following best practices for agile development.
+---
+name: user-story
+description: Creates detailed user stories with acceptance criteria, following best practices for agile development
+---
 
 ## Usage
 ```
@@ -45,14 +43,6 @@ Creates detailed user stories with acceptance criteria, following best practices
 - [Implementation consideration 1]
 - [Implementation consideration 2]
 
-### UI/UX Notes
-- [Design consideration 1]
-- [Design consideration 2]
-
-### Dependencies
-- [Dependency 1]
-- [Dependency 2]
-
 ### Definition of Done
 - [ ] Code implemented and reviewed
 - [ ] Unit tests written and passing
@@ -61,34 +51,13 @@ Creates detailed user stories with acceptance criteria, following best practices
 - [ ] Acceptance criteria verified
 ```
 
-## Best Practices
-
-### INVEST Criteria
+## Best Practices - INVEST Criteria
 - **I**ndependent - Can be developed separately
 - **N**egotiable - Details can be discussed
 - **V**aluable - Delivers value to users
 - **E**stimable - Can be estimated
 - **S**mall - Fits in a sprint
 - **T**estable - Has clear acceptance criteria
-
-### Writing Good Acceptance Criteria
-1. Be specific and measurable
-2. Cover happy path, edge cases, and errors
-3. Use Given-When-Then format
-4. Keep each criterion atomic
-5. Include both functional and non-functional requirements
-
-## Examples
-
-### Example 1
-```
-/user-story User can reset their password via email
-```
-
-### Example 2
-```
-/user-story Admin can export user data to CSV with date filters
-```
 
 ## Related Skills
 - `/spec` - Full feature specification

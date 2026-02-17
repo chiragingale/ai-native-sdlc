@@ -1,9 +1,7 @@
-# Skill: /spec - Generate Feature Specification
-
-<command-name>spec</command-name>
-
-## Description
-Generates a comprehensive feature specification using the PM Agent persona. This skill guides you through creating well-defined specifications with acceptance criteria.
+---
+name: spec
+description: Generates a comprehensive feature specification with acceptance criteria using the PM Agent persona
+---
 
 ## Usage
 ```
@@ -70,18 +68,6 @@ We'll iterate on the specification until it meets your requirements.
 
 ## Out of Scope
 [What's NOT included]
-```
-
-## Examples
-
-### Example 1: Simple Feature
-```
-/spec Add user profile photo upload
-```
-
-### Example 2: Complex Feature
-```
-/spec Implement real-time notification system for order status updates
 ```
 
 ## Related Skills

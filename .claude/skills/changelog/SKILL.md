@@ -1,16 +1,9 @@
-# Skill: /changelog - Generate Changelog
-
-<command-name>changelog</command-name>
-
-## Description
-Generates a changelog from git commits and pull requests, following Keep a Changelog format and Semantic Versioning.
+---
+name: changelog
+description: Generates a changelog from git commits and pull requests, following Keep a Changelog format and Semantic Versioning
+---
 
 ## Usage
-```
-/changelog [version or range]
-```
-
-## Options
 ```
 /changelog                      # Changes since last tag
 /changelog v1.2.0               # Changes for specific version
@@ -64,7 +57,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - New user profile page ([#123](link))
-- Export functionality for reports ([#125](link))
 
 ### Changed
 - Improved dashboard loading performance ([#124](link))
@@ -76,75 +68,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - User authentication system ([#100](link)) - @contributor
-- REST API for resources ([#102](link)) - @contributor
-
-### Changed
-- Updated Node.js to v20 ([#103](link))
-- Migrated from Express to Fastify ([#105](link))
-
-### Deprecated
-- Legacy `/api/v1/old-endpoint` will be removed in v2.0
-
-### Removed
-- Support for Node.js 16 ([#104](link))
-
-### Fixed
-- Memory leak in background worker ([#106](link))
-- Incorrect timezone handling ([#107](link))
 
 ### Security
 - Updated dependencies to fix CVE-2024-XXXX ([#108](link))
-
-## [1.1.0] - 2024-01-01
-
-### Added
-- Initial release
-
----
-
-[Unreleased]: https://github.com/org/repo/compare/v1.2.0...HEAD
-[1.2.0]: https://github.com/org/repo/compare/v1.1.0...v1.2.0
-[1.1.0]: https://github.com/org/repo/releases/tag/v1.1.0
-```
-
-## Version Recommendation
-
-Based on commits, I'll suggest the next version:
-
-```markdown
-## Version Analysis
-
-### Commits Since Last Release
-- feat: 3 (new features)
-- fix: 5 (bug fixes)
-- BREAKING: 0
-
-### Recommended Version
-Current: 1.2.0
-Suggested: **1.3.0** (MINOR - new features, no breaking changes)
-
-### Rationale
-- New features added (feat commits)
-- No breaking changes
-- Bug fixes included
-```
-
-## Integration with CI/CD
-
-### GitHub Release
-```yaml
-# .github/workflows/release.yml
-- name: Generate Changelog
-  run: |
-    claude /changelog ${{ github.ref_name }} > RELEASE_NOTES.md
-
-- name: Create Release
-  uses: softprops/action-gh-release@v1
-  with:
-    body_path: RELEASE_NOTES.md
 ```
 
 ## Related Skills
-- `/release-notes` - User-facing release notes
-- `/commit` - Create conventional commits
 - `/deploy-checklist` - Pre-deployment validation

@@ -1,18 +1,11 @@
-# Skill: /implement - Implement Feature
-
-<command-name>implement</command-name>
-
-## Description
-Implements a feature or task following the codebase patterns, architectural guidelines, and best practices. Uses the appropriate Developer Agent (Frontend/Backend) based on the task.
+---
+name: implement
+description: Implements a feature or task following the codebase patterns, architectural guidelines, and best practices
+---
 
 ## Usage
 ```
 /implement [task description or user story reference]
-```
-
-## Options
-```
-/implement [description]              # Auto-detect frontend/backend
 /implement frontend [description]     # Frontend implementation
 /implement backend [description]      # Backend implementation
 /implement fullstack [description]    # Both frontend and backend
@@ -106,23 +99,6 @@ Implements a feature or task following the codebase patterns, architectural guid
 
 ### Notes
 - [Any important notes or follow-up items]
-```
-
-## Examples
-
-### Example 1: Backend Feature
-```
-/implement Add rate limiting middleware for API endpoints
-```
-
-### Example 2: Frontend Feature
-```
-/implement Create a reusable data table component with sorting and pagination
-```
-
-### Example 3: Full Stack
-```
-/implement fullstack User can update their profile photo
 ```
 
 ## Related Skills
